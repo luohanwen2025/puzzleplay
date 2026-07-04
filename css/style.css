@@ -1,0 +1,155 @@
+/* ============================================================
+   游戏站共用样式 - 改这里会影响所有页面
+   配色:冷灰底 + 柔和的青蓝点缀,适合益智/休闲品类
+   ============================================================ */
+
+:root {
+  --bg: #f5f7fa;
+  --card: #ffffff;
+  --text: #1a2332;
+  --text-soft: #5a6a7e;
+  --accent: #2c7a9c;
+  --accent-soft: #e6f0f5;
+  --border: #e2e8f0;
+  --shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  --radius: 8px;
+  --max-width: 1080px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ---------- 顶部导航 ---------- */
+.site-header {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 0;
+}
+.site-header .wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand { font-size: 20px; font-weight: 700; color: var(--text); }
+.brand:hover { text-decoration: none; }
+.site-nav a { margin-left: 20px; color: var(--text-soft); font-size: 14px; }
+
+/* ---------- 主容器 ---------- */
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- 游戏页:游戏框 ---------- */
+.game-stage {
+  background: #000;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin: 24px 0;
+  box-shadow: var(--shadow);
+  position: relative;
+  /* 维持 16:9 左右的比例,避免不同游戏尺寸跳动 */
+  aspect-ratio: 16 / 9;
+}
+.game-stage iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+/* 移动端放宽比例,小游戏常是竖屏 */
+@media (max-width: 640px) {
+  .game-stage { aspect-ratio: 3 / 4; max-height: 70vh; }
+}
+
+/* ---------- 游戏页:标题与信息 ---------- */
+.game-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 8px 0 4px;
+}
+.game-meta {
+  color: var(--text-soft);
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+/* ---------- 内容区块 ---------- */
+.content-block { margin: 32px 0; }
+.content-block h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--accent-soft);
+}
+.content-block p { margin-bottom: 12px; color: var(--text); }
+
+/* ---------- 相关游戏 ---------- */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.related-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  text-decoration: none;
+}
+.related-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+.related-card .rc-title {
+  padding: 10px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+/* ---------- 首页游戏网格 ---------- */
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 24px 0;
+}
+
+/* ---------- 页脚 ---------- */
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--card);
+  padding: 32px 0;
+  margin-top: 48px;
+  color: var(--text-soft);
+  font-size: 13px;
+  text-align: center;
+}
+
+/* ---------- 页面标题区 ---------- */
+.page-hero { padding: 32px 0 8px; }
+.page-hero h1 { font-size: 24px; font-weight: 700; }
+.page-hero p { color: var(--text-soft); font-size: 15px; margin-top: 4px; }
