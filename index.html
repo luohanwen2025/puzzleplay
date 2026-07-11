@@ -68,33 +68,34 @@
         <span class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-accent text-white text-xs font-bold">P</span>
         PuzzlePlay
       </a>
-      <div class="hidden sm:flex items-center gap-7 text-[12px] text-sub">
-        <a href="index.html" class="hover:text-ink transition-colors">Home</a>
+     <div class="hidden sm:flex items-center gap-7 text-[12px] text-sub">
+       <a href="index.html" class="hover:text-ink transition-colors">Home</a>
+        <a href="games/juice-merge/" class="hover:text-ink transition-colors">Juice Merge</a>
         <a href="games/safari-story-mahjong/" class="hover:text-ink transition-colors">Mahjong</a>
-        <a href="#featured" class="hover:text-ink transition-colors">Games</a>
-        <a href="#how" class="hover:text-ink transition-colors">How to Play</a>
-      </div>
-    </nav>
-  </header>
+       <a href="#featured" class="hover:text-ink transition-colors">Games</a>
+       <a href="#how" class="hover:text-ink transition-colors">How to Play</a>
+     </div>
+   </nav>
+ </header>
 
-  <section class="bg-surface">
-    <div class="max-w-content mx-auto px-5 py-20 sm:py-28 text-center">
-      <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight text-ink leading-[1.05]">
-        Free puzzle games,<br class="hidden sm:block"> play instantly.
-      </h1>
-      <p class="mt-5 text-lg sm:text-xl text-sub max-w-2xl mx-auto leading-relaxed">
-        Handpicked HTML5 puzzle, matching, and brain games. No downloads, no sign-ups - just open a game and start playing on any device.
-      </p>
-      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
-        <a href="#featured" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-accent hover:bg-accentHover text-white text-[15px] font-medium transition-colors">
-          Browse games
-        </a>
-        <a href="games/safari-story-mahjong/" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white hover:bg-line/40 text-ink text-[15px] font-medium transition-colors border border-line">
-          Try Safari Story Mahjong
-        </a>
-      </div>
-    </div>
-  </section>
+ <section class="bg-surface">
+   <div class="max-w-content mx-auto px-5 py-20 sm:py-28 text-center">
+     <h1 class="text-4xl sm:text-6xl font-semibold tracking-tight text-ink leading-[1.05]">
+       Free puzzle games,<br class="hidden sm:block"> play instantly.
+     </h1>
+     <p class="mt-5 text-lg sm:text-xl text-sub max-w-2xl mx-auto leading-relaxed">
+       Handpicked HTML5 puzzle, matching, and brain games. No downloads, no sign-ups - just open a game and start playing on any device.
+     </p>
+     <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-3">
+       <a href="#featured" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-accent hover:bg-accentHover text-white text-[15px] font-medium transition-colors">
+         Browse games
+       </a>
+        <a href="games/juice-merge/" class="inline-flex items-center justify-center px-6 py-3 rounded-full bg-white hover:bg-line/40 text-ink text-[15px] font-medium transition-colors border border-line">
+          Play Juice Merge
+       </a>
+     </div>
+   </div>
+ </section>
 
   <section id="featured" class="py-20 sm:py-24">
     <div class="max-w-content mx-auto px-5">
@@ -117,13 +118,16 @@
           </div>
         </a>
 
-        <div class="group rounded-2xl overflow-hidden bg-surface border border-line/60 p-6 flex flex-col justify-between min-h-[180px]">
-          <div>
-            <h3 class="text-lg font-semibold tracking-tight">More games coming</h3>
-            <p class="mt-2 text-muted text-sm leading-relaxed">We add new puzzle and brain games every week. Check back soon.</p>
+        <a href="games/juice-merge/" class="group lg:col-span-2 block rounded-2xl overflow-hidden bg-surface border border-line/60 hover:shadow-lg transition-shadow">
+          <div class="aspect-[16/9] overflow-hidden">
+            <img src="games/juice-merge/thumbnail.jpg" alt="Juice Merge - fruit-merging puzzle game with colorful fruits dropping into the play field" width="1280" height="720" loading="lazy" class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500">
           </div>
-          <span class="text-xs text-muted mt-4">Coming soon</span>
-        </div>
+          <div class="p-6">
+            <span class="inline-block text-xs font-medium text-accent bg-accent/10 rounded-full px-2.5 py-1 mb-3">New &middot; Trending</span>
+            <h3 class="text-xl font-semibold tracking-tight">Juice Merge</h3>
+            <p class="mt-2 text-sub text-sm leading-relaxed">Drop and merge juicy fruits up the ladder. A fresh, addictive twist on the watermelon merge puzzle - easy to learn, hard to stop.</p>
+          </div>
+        </a>
 
         <div class="group rounded-2xl overflow-hidden bg-surface border border-line/60 p-6 flex flex-col justify-between min-h-[180px]">
           <div>
@@ -131,6 +135,14 @@
             <p class="mt-2 text-muted text-sm leading-relaxed">Every game is tested for quality. No filler, no clutter - just good puzzles.</p>
           </div>
           <span class="text-xs text-muted mt-4">Our promise</span>
+        </div>
+
+        <div class="group rounded-2xl overflow-hidden bg-surface border border-line/60 p-6 flex flex-col justify-between min-h-[180px]">
+          <div>
+            <h3 class="text-lg font-semibold tracking-tight">More games coming</h3>
+            <p class="mt-2 text-muted text-sm leading-relaxed">We add new puzzle and brain games every week. Check back soon.</p>
+          </div>
+          <span class="text-xs text-muted mt-4">Coming soon</span>
         </div>
       </div>
     </div>
