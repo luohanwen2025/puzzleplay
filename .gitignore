@@ -10,3 +10,6 @@ desktop.ini
 
 # Logs
 *.log
+# Local-only docs
+HOWTO-self-host-games.md
+DEV-NOTES.md
