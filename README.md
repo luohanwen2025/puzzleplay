@@ -56,6 +56,8 @@ look stays consistent.
 ## Add a new game (about 20-30 minutes)
 
 Using the keyword `jewel coloring` as an example.
+For **self-hosted** games (no domain-lock redirect), see the full guide:
+[HOWTO-self-host-games.md](HOWTO-self-host-games.md)
 
 ### 1. Get the embed code
 
